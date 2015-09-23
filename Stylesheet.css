@@ -1,0 +1,170 @@
+body {background-image: url("http://s2.wallippo.com/thumbs/300x250/black-background-metal-hole-small-0973bb47dba91f8d8959dd9e308cd3ae.jpeg");
+    background-size:100px 100px;
+    background-repeat:repeat;
+    background-attachment: fixed;
+    background-position:left top;}
+
+div{display:block;
+    float:left;
+    clear:both;
+    padding:20px 20px 20px 20px;
+    margin:20px 20px 20px 20px;
+    border:2px solid blue;
+    border-radius:50px;
+    border-bottom: thick dotted #ff0000;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    background-color:yellow;
+    background-clip: padding-box;
+    background-origin: border-box;
+    hanging-punctuation: first;
+    letter-spacing: 2px;
+    line-height: 90%;
+    tab-size: 16;
+    text-indent: 50px;
+    word-break: break-all;
+    word-wrap: break-word;
+    box-sizing: border-box;
+
+    box-shadow:10px 10px 10px grey;
+    text-align:center;
+    white-space:normal;
+    text-overflow: ellipsis;
+    resize: both;
+    marks:cross;
+}
+h1 {
+    counter-reset: subsection;
+    outline: #00FF00 dotted thick;
+    column-span: all;
+}
+
+h1:before {
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+}
+
+h2:before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+}
+ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    list-style-image: url('http://www.w3school.com/sqpurple.gif');
+}
+h1{
+    text-transform: uppercase;
+    word-spacing: 30px;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-shadow: 2px 2px #ff0000;
+    font: 15px arial, sans-serif;
+    font-variant:normal;
+    font-weight: bold;
+    direction:ltr;
+
+
+}
+#ruut{
+    visibility:visible;
+
+    right:50px;
+    left:1050px;
+    bottom:350px;
+    top:100px;
+    z-index: -1;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    -webkit-transform: rotate(7deg);
+    -webkit-transform-origin: 20% 40%;
+    -webkit-backface-visibility:visible;
+    -webkit-perspective: 500px;
+    -webkit-perspective-origin: 10% 10%;
+    -webkit-transform-style: preserve-3d;
+}
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+#first{
+    border-image: url(http://www.w3schools.com/css/border.png) 30 round;
+    border-left: thick dotted #ff0000;
+    border-right: thick dotted #ff0000;
+    border-top: thick dotted #ff0000;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    -webkit-transition-property: width; /* Safari */
+    transition-property: width;
+    transition-duration: 50s;
+    transition-timing-function: linear;
+    transition-delay: 2s;
+
+}
+#first:hover {
+    width: 600px;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 10px 50px;
+    caption-side: bottom;
+    empty-cells: hide;
+    table-layout: fixed;
+}
+#lahtrid{
+    unicode-bidi: bidi-override;
+    min-height:200px ;
+    min-width:400px;
+    max-height:500px ;
+    max-width:800px ;
+    visibility:visible;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -moz-column-fill: auto; /* Firefox */
+    column-fill: auto;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule: 4px outset #ff00ff; /* Chrome, Safari, Opera */
+    -moz-column-rule: 4px outset #ff00ff; /* Firefox */
+    column-rule: 4px outset #ff00ff;
+    -webkit-column-width: 100px; /* Chrome, Safari, Opera */
+    -moz-column-width: 100px; /* Firefox */
+    column-width: 100px;
+}
+#person{
+    height:300px;
+    width:500px;
+    overflow: scroll;
+    vertical-align: text-top;
+
+}
+#flex {
+    background-color:red;
+    width: 70px;
+    height: 300px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+}
+@media print {
+    footer {page-break-after: always;}
+}
+@media print {
+    h1 {page-break-before: always;}
+}
+@media print {
+    p {page-break-inside: avoid;}
+}

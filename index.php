@@ -8,11 +8,14 @@
     <title>Document</title>
     <style>
         p {color:red;}
+        q {
+            quotes: "«" "»" "‹" "›";
+        }
     </style>
 </head>
 <body>
 <main>
-<div>
+<div id="first">
 <nav><a href="www.google.com">Google<br></a></nav>
 <abbr title="Central Intelligence Agency">CIA<br></abbr>
 <address>Martin Kooga<br>Jõhvi<br></address>
@@ -22,6 +25,7 @@
 <bdi>Lorem ipsum dolor sit amet.</bdi>
 <bdo>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, neque.</bdo>
 <blockquote>Lorem ipsum dolor.</blockquote>
+    <span style="cursor:help">help</span><br>
 <em>Lorem ipsum dolor sit amet, consectetur adipisicing.</em>
 <dl>
     <dt>Meh</dt>
@@ -136,7 +140,7 @@ Sigh
         </option>
     </select>
 </div>
-<div>
+<div id="ruut">
     <canvas id="myCanvas"></canvas>
 
     <script>
@@ -147,7 +151,7 @@ Sigh
     </script>
     <noscript>Midagi läks valesti.</noscript>
 </div>
-<div>
+<div id="lahtrid">
     <form action="demo_form.asp" method="get">
         <label for="browser">Browsers</label>
         <input id="browsers" list="browsers" name="browser">
@@ -177,7 +181,7 @@ Sigh
     </details>
 
 </div>
-<div>
+<div id="person">
     <form>
         <fieldset>
             <legend>Personalia:</legend>
@@ -194,6 +198,9 @@ Sigh
         <object data="assets/audio/sigh.wma">
             <param name="autoplay" value="true">
         </object>
+
+</div>
+<div id="flex">
 
 </div>
 <textarea rows="2" cols="30">
