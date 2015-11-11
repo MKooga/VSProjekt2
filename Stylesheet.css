@@ -8,7 +8,15 @@ div{display:block;
     float:left;
     clear:both;
     padding:20px 20px 20px 20px;
+    padding-top:20px;
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom:20px;
     margin:20px 20px 20px 20px;
+    margin-bottom:20px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
     border:2px solid blue;
     border-radius:50px;
     border-bottom: thick dotted #ff0000;
@@ -28,14 +36,20 @@ div{display:block;
 
     box-shadow:10px 10px 10px grey;
     text-align:center;
+    align-items:center;
+    align-self:center;
     white-space:normal;
     text-overflow: ellipsis;
     resize: both;
     marks:cross;
 }
 h1 {
+    hyphens: none;
     counter-reset: subsection;
     outline: #00FF00 dotted thick;
+    outline-color:#00FF00;
+    outline-style:dotted;
+    outline-width:thick;
     column-span: all;
 }
 
@@ -60,8 +74,12 @@ h1{
     text-decoration-color: red;
     text-shadow: 2px 2px #ff0000;
     font: 15px arial, sans-serif;
+    font-family:arial, sans-serif;
     font-variant:normal;
     font-weight: bold;
+    font-feature-settings: normal;
+    font-size:15px;
+    font-style: normal;
     direction:ltr;
 
 
@@ -78,6 +96,8 @@ h1{
     -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
     -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
     animation: mymove 5s infinite;
+    animation-name: mymove;
+    animation-duration: 5s;
     animation-delay: 2s;
     animation-direction: alternate;
     animation-play-state: running;
@@ -90,11 +110,12 @@ h1{
     -webkit-perspective-origin: 10% 10%;
     -webkit-transform-style: preserve-3d;
 }
-@-webkit-keyframes mymove {
+@keyframes mymove {
     from {left: 0px;}
     to {left: 200px;}
 }
 #first{
+    flex-shrink:3;
     border-image: url(http://www.w3schools.com/css/border.png) 30 round;
     border-left: thick dotted #ff0000;
     border-right: thick dotted #ff0000;
@@ -112,13 +133,18 @@ h1{
     width: 600px;
 }
 table{
+    border-color:red;
+    border-style:solid;
+    border-width:1px;
     border-collapse: separate;
     border-spacing: 10px 50px;
     caption-side: bottom;
     empty-cells: hide;
     table-layout: fixed;
+    columns:auto;
 }
 #lahtrid{
+    flex-grow:3;
     unicode-bidi: bidi-override;
     min-height:200px ;
     min-width:400px;
@@ -141,19 +167,28 @@ table{
     column-width: 100px;
 }
 #person{
+    opacity:1;
     height:300px;
     width:500px;
     overflow: scroll;
+    overflow-x:scroll;
+    overflow-y:scroll;
+    overflow-wrap: normal;
     vertical-align: text-top;
 
 }
 #flex {
+    order:1;
+    flex-basis:auto;
     background-color:red;
     width: 70px;
     height: 300px;
     border: 1px solid #c3c3c3;
     display: -webkit-flex;
     display: flex;
+    flex-direction:row-reverse;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-align-content: center;
@@ -167,4 +202,8 @@ table{
 }
 @media print {
     p {page-break-inside: avoid;}
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(https://www.w3school.com/sansation_light.woff);
 }
