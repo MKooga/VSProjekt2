@@ -21,6 +21,7 @@
 <address>Martin Kooga<br>Jõhvi<br></address>
     <cite>Lorem ipsum.</cite>
 <article><p><b>Lorem ipsum dolor sit amet, consectetur.</b></p></article>
+    <var>Variable.</var>
 <aside>Lorem ipsum dolor sit amet, consectetur.</aside>
 <bdi>Lorem ipsum dolor sit amet.</bdi>
 <bdo>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, neque.</bdo>
@@ -35,6 +36,11 @@
 </dl>
     <del>Lorem ipsum dolor.</del>
     <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
     <header>Lorem ipsum.</header><hr>
     <cite>Lorem ipsum dolor.</cite><br>
     <code><?php echo "Hello world!";?></code>
